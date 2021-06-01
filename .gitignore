@@ -1,0 +1,22 @@
+# golang
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# misc
+.DS_Store
+
+# env
+*.env*
+*.secrets*
+
+# build
+bin/
+*.syso
+*.deb
+*.zip
+*.dmg
