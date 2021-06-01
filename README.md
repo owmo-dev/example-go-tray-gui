@@ -1,2 +1,2 @@
 # example-go-app-TrayGUI
-Example
+An example cross-platform (Mac, Windows, Linux) system tray application that can launch HTML5 windows, developed in Go including functional build process. This repository is intended as a quick reference to help others start similar projects using the referenced libraries and will not be actively maintained.
