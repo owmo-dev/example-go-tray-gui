@@ -51,7 +51,6 @@ func Get() *Views {
 		views.WaitGroup.Add(1)
 		go func(*Views) {
 			defer views.WaitGroup.Done()
-
 			ln, err := net.Listen("tcp", fmt.Sprintf("%s:%d", HOST, PORT))
 			if err != nil {
 				log.Fatal(err)
