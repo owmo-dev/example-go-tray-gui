@@ -15,5 +15,5 @@
 *.secrets*
 
 # build
-builds/
+bin/
 *.syso
