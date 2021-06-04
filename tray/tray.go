@@ -10,13 +10,17 @@ import (
 	"github.com/getlantern/systray"
 	"github.com/granmo/ExampleTrayGUI/icon"
 	"github.com/granmo/ExampleTrayGUI/views"
+	"github.com/skratchdot/open-golang/open"
 )
 
 func OnReady() {
 	systray.SetIcon(icon.Data)
 
 	mHelloWorld := systray.AddMenuItem("Hello, World!", "Opens a simple HTML Hello, World")
-
+	systray.AddSeparator()
+	mGoogleBrowser := systray.AddMenuItem("Google in Browser", "Opens Google in a normal browser")
+	mGoogleEmbed := systray.AddMenuItem("Google in Window", "Opens Google in a custom window")
+	systray.AddSeparator()
 	mQuit := systray.AddMenuItem("Quit", "Quit example tray application")
 
 	sigc := make(chan os.Signal, 1)
@@ -24,8 +28,19 @@ func OnReady() {
 
 	for {
 		select {
+
 		case <-mHelloWorld.ClickedCh:
 			err := views.Get().OpenIndex()
+			if err != nil {
+				fmt.Println(err)
+			}
+		case <-mGoogleBrowser.ClickedCh:
+			err := open.Run("https://www.google.com")
+			if err != nil {
+				fmt.Println(err)
+			}
+		case <-mGoogleEmbed.ClickedCh:
+			err := views.Get().OpenGoogle()
 			if err != nil {
 				fmt.Println(err)
 			}

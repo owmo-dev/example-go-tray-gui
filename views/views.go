@@ -42,6 +42,12 @@ func Get() *Views {
 			height: 280,
 		}
 
+		l["Google"] = &View{
+			url:    "https://www.google.com/",
+			width:  960,
+			height: 800,
+		}
+
 		views = &Views{
 			list:      l,
 			WaitGroup: &sync.WaitGroup{},
