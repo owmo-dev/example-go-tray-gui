@@ -1,5 +1,5 @@
 #!/bin/sh
-PKGCONFIG="github.com/ctrlshiftmake/example-go-desktop-traygui/config"
+PKGCONFIG="github.com/ctrlshiftmake/example-go-desktop-TrayGUI/config"
 
 LD_FLAG_MESSAGE="-X '${PKGCONFIG}.ApplicationVersion=${VERSION}'"
 

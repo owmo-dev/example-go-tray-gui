@@ -2,12 +2,13 @@ package tray
 
 import (
 	"fmt"
-	"grantmoore3d/example-go-desktop-TrayGUI/icon"
-	"grantmoore3d/example-go-desktop-TrayGUI/views"
+
 	"os"
 	"os/signal"
 	"syscall"
 
+	"github.com/ctrlshiftmake/example-go-desktop-TrayGUI/icon"
+	"github.com/ctrlshiftmake/example-go-desktop-TrayGUI/views"
 	"github.com/getlantern/systray"
 )
 

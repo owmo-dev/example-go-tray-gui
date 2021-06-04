@@ -1,5 +1,5 @@
 package config
 
 var (
-	ApplicationVersion = "development"
+	ApplicationVersion string = "development"
 )

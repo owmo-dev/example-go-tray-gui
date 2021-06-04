@@ -5,6 +5,14 @@
     </head>
     <body>
         <h1>Hello, World!</h1>
-        <p>Simple "Hello, World!" page to display</p>
+        <div>The application version is: <span id="version"></span></div>
+        <script>
+            const v = document.getElementById("version");
+            const render = async () => {
+                let appVersion = await window.appVersion();
+                v.innerHTML = `<b>${appVersion}</b>`;
+            };
+            render();
+        </script>
     </body>
 </html>
