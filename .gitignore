@@ -17,3 +17,6 @@
 # build
 bin/
 *.syso
+*.deb
+*.zip
+*.dmg

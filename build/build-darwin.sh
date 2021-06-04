@@ -16,5 +16,5 @@ cd ${BUILD_DIR}
 
 rm *.dmg
 create-dmg --dmg-title="${NAME}" --overwrite "${APP}"
-mv *.dmg ${NAME}_${VERSION}_amd64.dmg
+mv *.dmg ${NAME}_${VERSION}_mac_amd64.dmg
 rm -rf "${APP}"

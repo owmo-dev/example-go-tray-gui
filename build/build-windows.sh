@@ -11,7 +11,7 @@ rsrc -arch amd64 -ico ../icon/iconwin.ico -manifest "./windows/ExampleTrayGUI.ex
 
 GOOS=windows GOARCH=amd64 go build -o ${BUILD_DIR}/"${APP}" -ldflags="${LDFLAGS}" ../main.go
 
-ditto -c -k --sequesterRsrc ${BUILD_DIR}/"${APP}" ${BUILD_DIR}/${NAME}_${VERSION}_amd64.zip
+ditto -c -k --sequesterRsrc ${BUILD_DIR}/"${APP}" ${BUILD_DIR}/${NAME}_${VERSION}_windows_amd64.zip
 
 rm -rf ${BUILD_DIR}/"${APP}"
 rm -rf ../ExampleTrayGUI.syso

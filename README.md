@@ -8,6 +8,7 @@ The build process requires a `.env` at the root of your repo file, defining the 
 ```
 VERSION=1.0.0
 NAME=ExampleTrayGUI
+NAME_LOWER=example-tray-gui
 ```
 
 Additionally, you'll need to install the following to build for all platforms:
@@ -19,3 +20,5 @@ brew install graphicsmagick imagemagick
 ```
 
 https://www.docker.com/get-started
+
+Once Docker is installed, go to `Preferences > Resources > File Sharing` and add your `bin` directory in your repository to the list of locations so that build outputs can be shared from the images.
