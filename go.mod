@@ -1,4 +1,4 @@
-module github.com/ctrlshiftmake/example-go-desktop-TrayGUI
+module github.com/granmo/example-go-desktop-TrayGUI
 
 go 1.16
 

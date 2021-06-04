@@ -7,7 +7,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/ctrlshiftmake/example-go-desktop-TrayGUI/config"
+	"github.com/granmo/example-go-desktop-TrayGUI/config"
 	"github.com/zserge/lorca"
 )
 

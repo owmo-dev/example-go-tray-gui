@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/ctrlshiftmake/example-go-desktop-TrayGUI/tray"
-	"github.com/ctrlshiftmake/example-go-desktop-TrayGUI/views"
 	"github.com/getlantern/systray"
+	"github.com/granmo/example-go-desktop-TrayGUI/tray"
+	"github.com/granmo/example-go-desktop-TrayGUI/views"
 )
 
 func main() {

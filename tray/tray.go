@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/ctrlshiftmake/example-go-desktop-TrayGUI/icon"
-	"github.com/ctrlshiftmake/example-go-desktop-TrayGUI/views"
 	"github.com/getlantern/systray"
+	"github.com/granmo/example-go-desktop-TrayGUI/icon"
+	"github.com/granmo/example-go-desktop-TrayGUI/views"
 )
 
 func OnReady() {
