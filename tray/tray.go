@@ -8,8 +8,8 @@ import (
 	"syscall"
 
 	"github.com/getlantern/systray"
-	"github.com/granmo/example-go-desktop-TrayGUI/icon"
-	"github.com/granmo/example-go-desktop-TrayGUI/views"
+	"github.com/granmo/ExampleTrayGUI/icon"
+	"github.com/granmo/ExampleTrayGUI/views"
 )
 
 func OnReady() {

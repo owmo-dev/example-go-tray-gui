@@ -7,7 +7,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/granmo/example-go-desktop-TrayGUI/config"
+	"github.com/granmo/ExampleTrayGUI/config"
 	"github.com/zserge/lorca"
 )
 

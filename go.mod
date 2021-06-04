@@ -1,4 +1,4 @@
-module github.com/granmo/example-go-desktop-TrayGUI
+module github.com/granmo/ExampleTrayGUI
 
 go 1.16
 

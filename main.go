@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/getlantern/systray"
-	"github.com/granmo/example-go-desktop-TrayGUI/tray"
-	"github.com/granmo/example-go-desktop-TrayGUI/views"
+	"github.com/granmo/ExampleTrayGUI/tray"
+	"github.com/granmo/ExampleTrayGUI/views"
 )
 
 func main() {
