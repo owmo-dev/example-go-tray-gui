@@ -1,9 +1,8 @@
 #!/bin/sh
 source flags.sh
 
-BUILD_DIR="../bin/${VERSION}/"
-
 APP="${NAME}.app"
+BUILD_DIR="../bin/${VERSION}/"
 
 rm -rf ${BUILD_DIR}/"$APP"/
 mkdir -p ${BUILD_DIR}/"$APP"/Contents/{MacOS,Resources}
@@ -17,5 +16,5 @@ cd ${BUILD_DIR}
 
 rm *.dmg
 create-dmg --dmg-title="${NAME}" --overwrite "${APP}"
-mv *.dmg ${NAME}_${VERSION}.dmg
+mv *.dmg ${NAME}_${VERSION}_amd64.dmg
 rm -rf "${APP}"
